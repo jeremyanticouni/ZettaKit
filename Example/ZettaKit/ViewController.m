@@ -52,7 +52,7 @@
 
     
     self._servers = [[NSMutableArray alloc] init];
-    NSURL *url = [NSURL URLWithString:@"http://localhost:3001/"];
+    NSURL *url = [NSURL URLWithString:@"https://zetta-kit-test.herokuapp.com"];
     ZIKSession *session = [ZIKSession sharedSession];
     RACSignal *root = [session root:url];
     self.serverSignal = [session servers:root];
